@@ -11,7 +11,7 @@ namespace Game.Net
 	public class USocket
 	{
 		UdpClient udpClient;
-		string ip = "127.0.0.1"; // 服务器主机
+		string ip = "10.235.200.243"; // 服务器主机
 		int port = 8899;
 
 		public static UClient local;// 客户端代理， 完成发送的逻辑和处理逻辑， 保证报文的顺序

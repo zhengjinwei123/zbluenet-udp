@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D7A81DC7-EE75-41F1-8078-281969E447CB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MobaServer</RootNamespace>
+    <AssemblyName>MobaServer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LitJson">
+      <HintPath>..\mobaClient\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Google.Protobuf\ByteArray.cs" />
+    <Compile Include="Google.Protobuf\ByteString.cs" />
+    <Compile Include="Google.Protobuf\CodedInputStream.cs" />
+    <Compile Include="Google.Protobuf\CodedOutputStream.ComputeSize.cs" />
+    <Compile Include="Google.Protobuf\CodedOutputStream.cs" />
+    <Compile Include="Google.Protobuf\Collections\RepeatedField.cs" />
+    <Compile Include="Google.Protobuf\Compatibility\PropertyInfoExtensions.cs" />
+    <Compile Include="Google.Protobuf\Compatibility\StreamExtensions.cs" />
+    <Compile Include="Google.Protobuf\FieldCodec.cs" />
+    <Compile Include="Google.Protobuf\ICustomDiagnosticMessage.cs" />
+    <Compile Include="Google.Protobuf\IMessage.cs" />
+    <Compile Include="Google.Protobuf\InvalidProtocolBufferException.cs" />
+    <Compile Include="Google.Protobuf\LimitedInputStream.cs" />
+    <Compile Include="Google.Protobuf\MessageExtensions.cs" />
+    <Compile Include="Google.Protobuf\MessageParser.cs" />
+    <Compile Include="Google.Protobuf\ProtobufHelper.cs" />
+    <Compile Include="Google.Protobuf\ProtoPreconditions.cs" />
+    <Compile Include="Google.Protobuf\WireFormat.cs" />
+    <Compile Include="Helper\JsonHelper.cs" />
+    <Compile Include="Helper\TimerHelper.cs" />
+    <Compile Include="Log\Debug.cs" />
+    <Compile Include="Net\BufferEntity.cs" />
+    <Compile Include="Net\UClient.cs" />
+    <Compile Include="Net\USocket.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Google.Protobuf\ByteArray.cs.meta" />
+    <None Include="Google.Protobuf\ByteString.cs.meta" />
+    <None Include="Google.Protobuf\CodedInputStream.cs.meta" />
+    <None Include="Google.Protobuf\CodedOutputStream.ComputeSize.cs.meta" />
+    <None Include="Google.Protobuf\CodedOutputStream.cs.meta" />
+    <None Include="Google.Protobuf\Collections.meta" />
+    <None Include="Google.Protobuf\Collections\RepeatedField.cs.meta" />
+    <None Include="Google.Protobuf\Compatibility.meta" />
+    <None Include="Google.Protobuf\Compatibility\PropertyInfoExtensions.cs.meta" />
+    <None Include="Google.Protobuf\Compatibility\StreamExtensions.cs.meta" />
+    <None Include="Google.Protobuf\FieldCodec.cs.meta" />
+    <None Include="Google.Protobuf\ICustomDiagnosticMessage.cs.meta" />
+    <None Include="Google.Protobuf\IMessage.cs.meta" />
+    <None Include="Google.Protobuf\InvalidProtocolBufferException.cs.meta" />
+    <None Include="Google.Protobuf\LimitedInputStream.cs.meta" />
+    <None Include="Google.Protobuf\MessageExtensions.cs.meta" />
+    <None Include="Google.Protobuf\MessageParser.cs.meta" />
+    <None Include="Google.Protobuf\ProtobufHelper.cs.meta" />
+    <None Include="Google.Protobuf\ProtoPreconditions.cs.meta" />
+    <None Include="Google.Protobuf\WireFormat.cs.meta" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

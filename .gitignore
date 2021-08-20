@@ -1,3 +1,5 @@
 /mobaClient/bin/
 /mobaClient/obj/
 /mobaClient/.vs/
+/mobaClient/MobaServer/bin/
+/mobaClient/MobaServer/obj/

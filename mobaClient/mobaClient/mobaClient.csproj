@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="cs\BattlePB.cs" />
+    <Compile Include="cs\LobbyPB.cs" />
+    <Compile Include="cs\RolesPB.cs" />
+    <Compile Include="cs\RoomPB.cs" />
+    <Compile Include="cs\RootPB.cs" />
+    <Compile Include="cs\UserPB.cs" />
     <Compile Include="Google.Protobuf\ByteArray.cs" />
     <Compile Include="Google.Protobuf\ByteString.cs" />
     <Compile Include="Google.Protobuf\CodedInputStream.cs" />
@@ -98,5 +104,6 @@
     <None Include="Google.Protobuf\ProtoPreconditions.cs.meta" />
     <None Include="Google.Protobuf\WireFormat.cs.meta" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

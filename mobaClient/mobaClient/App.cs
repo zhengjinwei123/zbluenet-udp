@@ -10,19 +10,27 @@ namespace mobaClient
 	public class App
 	{
 		USocket uSocket;
+		Task task;
+		private bool quit = false;
 		public App()
 		{
 			uSocket = new USocket(dispatchNetEvent);
+			task = Task.Factory.StartNew(Update);
+		}
 
-			var task = Task.Factory.StartNew(Update);
-
+		public void Wait()
+		{
 			task.Wait();
+		}
+
+		public void Quit() {
+			quit = true;
 		}
 
 		private void Update()
 		{
 			if (uSocket != null) {
-				while (true) {
+				while (quit == false) {
 					uSocket.Handle();
 				}
 			}
