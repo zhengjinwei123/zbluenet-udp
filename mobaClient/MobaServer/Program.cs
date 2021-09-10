@@ -14,8 +14,11 @@ namespace MobaServer
 		{
 			Console.WriteLine("启动服务器....");
 			NetSystemInit();
+			while (true) {
+				Console.ReadLine();
+			}
 
-			Console.ReadLine();
+			
 		}
 
 

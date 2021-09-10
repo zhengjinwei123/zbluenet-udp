@@ -1,9 +1,9 @@
-E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.csprojAssemblyReference.cache
-E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.csproj.CoreCompileInputs.cache
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\bin\Debug\mobaClient.exe.config
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\bin\Debug\mobaClient.exe
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\bin\Debug\mobaClient.pdb
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\bin\Debug\LitJson.dll
+E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.csproj.CoreCompileInputs.cache
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.csproj.CopyComplete
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.exe
 E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.pdb
+E:\mygit1\zblue\zbluenet-udp\zbluenet-udp\mobaClient\mobaClient\obj\Debug\mobaClient.csprojAssemblyReference.cache

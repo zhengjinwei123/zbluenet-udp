@@ -11,8 +11,8 @@ namespace Game.Net
 	public class USocket
 	{
 		UdpClient udpClient;
-		string ip = "10.235.200.243"; // 服务器主机
-		int port = 8899;
+		string ip = "127.0.0.1"; // 服务器主机
+		int port = 8889;
 
 		public static UClient local;// 客户端代理， 完成发送的逻辑和处理逻辑， 保证报文的顺序
 
@@ -54,6 +54,7 @@ namespace Game.Net
 				try
 				{
 					int len = await udpClient.SendAsync(data, data.Length, ip, port);
+					Debug.Log($"send {ip}:{port}--->{len}");
 				}
 				catch (Exception e) {
 					Debug.LogError($"发送异常:{e.Message}");
